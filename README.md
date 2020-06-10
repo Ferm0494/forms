@@ -24,6 +24,10 @@ Install dependencies
 
 `bundle install`
 
+Migrate the database 
+
+`rails db:migrate`
+
 Run the server
 
 `rails s or and go into localhost:3000`
