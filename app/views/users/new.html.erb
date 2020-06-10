@@ -1,0 +1,40 @@
+<h2>New user!</h2>
+<%#
+ <form action="/users" method="POST" accept-charset="UTF-8" autocomplete="off">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %> <%# "> 
+  <label for="username">Username</label>
+  <input type="text" id="username" name="user[username]"  ><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="user[email]"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="user[password]"><br><br>
+  <input type="submit" value="Submit">
+</form>  %>
+
+<!--
+<%=form_tag users_path do  %> 
+   <%= label_tag 'email' %>
+   <%= text_field(:user,:email) %>
+
+    <%= label_tag 'username' %>
+   <%= text_field(:user,:username) %>
+
+    <%= label_tag 'password' %>
+   <%= password_field(:user,:password) %>
+
+   <%= submit_tag %>
+
+<%end%>
+-->
+<%= render'shared/flash', user: @user %>
+<%= form_for @user do |f|%>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+     <%= f.label :username %>
+    <%= f.text_field :username %>
+
+     <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit %>
+<%end%>

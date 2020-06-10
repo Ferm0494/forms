@@ -1,0 +1,7 @@
+<% if !flash[:notice].nil? %>
+            <h3><%= flash[:notice] %></h3>
+       <%user.errors.full_messages.each do |m|%>
+            <li><%= m %></li>
+       <%end%> 
+
+<%end%>
