@@ -1,7 +1,9 @@
 <% if !flash[:notice].nil? %>
             <h3><%= flash[:notice] %></h3>
+            <% if !params[:action].eql?("index")  %>
        <%user.errors.full_messages.each do |m|%>
             <li><%= m %></li>
        <%end%> 
+      <%end%>
 
 <%end%>

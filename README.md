@@ -1,24 +1,72 @@
-# README
+## Building with active records
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> The purpose of this project was to learn about associations in rails and models 
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Ruby on Rails
 
-* System dependencies
+## Getting Started
 
-* Configuration
+You will need:
+- Ruby
+- Ruby on Rails
+- Bundler
 
-* Database creation
+### Install
 
-* Database initialization
+Clone the repo
 
-* How to run the test suite
+`https://github.com/Ferm0494/micro-reddit`
 
-* Services (job queues, cache servers, search engines, etc.)
+Install dependencies
 
-* Deployment instructions
+`bundle install`
 
-* ...
+Run the server
+
+`rails s or and go into localhost:3000`
+
+
+
+### Examples:
+**Only whitespaces where validated**
+
+- Creating user: `Click in create a User link below and create your user`**make sure you dont leave anything blank!**
+- UpdatingUser: `Click in any particular user and fill out the form to edit it`**make sure you dont leave anything blank**
+
+
+
+## Authors
+
+
+👤 **Fernando**
+
+- Github: [@Ferm0494](https://github.com/Ferm0494)
+- Twitter: [@ferm494](https://twitter.com/ferm494)
+- Linkedin: [@Ferm0494](https://www.linkedin.com/in/ferm0494/)
+
+👤 **Muhammad arslan**
+- Github: [@@arslanbisharat](https://github.com/arslanbisharat)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- The Odin Project
+- Microverse
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.

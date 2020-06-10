@@ -1,0 +1,9 @@
+<h2>List of all users</h2>
+
+<%= render 'shared/flash' %>
+
+<% @users.each do |u| %>
+    <li> <%=link_to u.username, edit_user_path(u) %> </li>
+<%end%>
+
+<%= link_to "Create a new user" , new_user_path%>
