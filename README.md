@@ -1,6 +1,6 @@
-## Building with active records
+## Forms 
 
-> The purpose of this project was to learn about associations in rails and models 
+> The purpose of this project was to learn about forms for rails and routing with them
 
 ## Built With
 
@@ -18,7 +18,7 @@ You will need:
 
 Clone the repo
 
-`https://github.com/Ferm0494/micro-reddit`
+`https://github.com/Ferm0494/forms`
 
 Install dependencies
 
