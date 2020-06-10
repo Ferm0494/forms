@@ -3,15 +3,15 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def create 
+  def create
     @user = User.new(user_params)
-  if @user.save
-    flash[:notice]= "User created!"
-    redirect_to new_user_path
-  else
-    flash[:notice]= "Please fix the errors : "
-    render 'new'
-  end
+    if @user.save
+      flash[:notice] = 'User created!'
+      redirect_to new_user_path
+    else
+      flash[:notice] = 'Please fix the errors : '
+      render 'new'
+    end
   end
 
   def edit
@@ -21,24 +21,18 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
 
-    if @user.update(user_params) 
-        flash[:notice]= "User updated correctly!"
-        redirect_to edit_user_path
+    if @user.update(user_params)
+      flash[:notice] = 'User updated correctly!'
+      redirect_to edit_user_path
     else
-        flash[:notice]= "Fix the errors"
-        render 'edit'
+      flash[:notice] = 'Fix the errors'
+      render 'edit'
     end
-
-  end
-
-  def edit
-    @user = User.find(params[:id]);
   end
 
   private
-  
-  def user_params	
+
+  def user_params
     params.require(:user).permit(:username, :password, :email)
   end
-
 end
